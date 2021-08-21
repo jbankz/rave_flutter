@@ -40,6 +40,6 @@ putIfTrue({@required Map map, @required key, @required bool value}) {
 printWrapped(Object text) {
   final pattern = new RegExp('.{1,800}'); // 800 is the size of each chunk
   pattern
-      .allMatches(text?.toString())
+      .allMatches(text.toString())
       .forEach((match) => debugPrint(match.group(0)));
 }
